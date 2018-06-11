@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import SearchBar from '../SearchBar/SearchBar';
-import SearchResult from '../SearchResult/SearchResult';
-import Plyalist from '../Plyalist/Plyalist';
+import SearchResult from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 
 class App extends Component {
-	contructor(props) {
+	constructor(props) {
 		super(props);
 		
-		this.state = searchResults{(name, artist, album, id)};
+		this.state = { searchResults: ['name', 'artist', 'album', 'id']};
 	}
   render() {
     return (
