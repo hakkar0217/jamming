@@ -1,5 +1,5 @@
 const spotifyAuthorizeEndpoint = 'https://accounts.spotify.com/authorize';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://hakan.surge.sh/';
 const spotifyApiUrl = 'https://api.spotify.com/v1'; // Added because using url thinks it is a comment
 
 const userId = 'cdd290f3f62542bdaa8b341669524331';
