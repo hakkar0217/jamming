@@ -25,21 +25,19 @@ class App extends React.Component {
 	}
 	
 	// Adds tracks to the playlist
-	addTrack(track) {
-		
-		if (this.state.playlistTracks.find(savedTrack => savedTrack.id === track.id)) {
-			let tracks = this.state.playlistTracks;
-				tracks.push(track);		
+	addTrack(track) {		
+		let tracks = this.state.playlistTracks;
+				tracks.push(track);
+						
 				this.setState({playlistTracks: tracks});
-		}
 	}
 	
 	// Removes from the playlist
 	removeTrack(track) {
 		let tracks = this.state.playlistTracks;
-		if (this.state.playlistTracks.find(currentTrack => currentTrack.id !== track.id)) {
+		tracks =tracks.filter(currentTrack => currentTrack.id !== track.id);
+		
 		this.setState({playlistTracks: tracks});
-		}
 	}
 	
 	// Updating the playlist names
