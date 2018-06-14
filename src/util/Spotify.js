@@ -28,6 +28,7 @@ const Spotify = {
 			
 	},
 	
+	
 	search(term) {
 		const accessToken = Spotify.getAccessToken();
 		return fetch(`${spotifyApiUrl}/search?type=track&q=${term}`, {
@@ -50,6 +51,7 @@ const Spotify = {
 		});
 	},
 
+// Saving the playlist
 savePlaylist(name, trackUris) {
 	if (!name || !trackUris.length) {
 		return;
